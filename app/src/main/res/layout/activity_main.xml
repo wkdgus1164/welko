@@ -29,4 +29,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.584" />
 
+    <Button
+        android:id="@+id/btnFirestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Firestore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="62dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

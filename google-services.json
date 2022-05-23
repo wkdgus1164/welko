@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202543720026",
+    "project_id": "welko-e77d9",
+    "storage_bucket": "welko-e77d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202543720026:android:cddf5e041b43a645815a63",
+        "android_client_info": {
+          "package_name": "com.inhatc.welko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202543720026-1omli1d63mptle9m33v7kk87ti9ogvl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9c6xuo2wPbqW_eeTJ0gd1cIzpCVk1IQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202543720026-1omli1d63mptle9m33v7kk87ti9ogvl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
