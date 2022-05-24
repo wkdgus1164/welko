@@ -5,10 +5,10 @@
 외국인이 한국에 여행을 왔을 때, 국내에서 여행지나 볼거리를 모아서 보여주는 서비스입니다.
 
 ### 사용 기술
-- Android - Java & XML
-- Database - Firebase Firestore
-- Authentication - Firebase Login (SNS)
-- Web Crawling - Python & BeautifulSoup
+- Android - <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/>
+- Database - <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white"/>
+- Authentication - <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white"/>
+- Web Crawling - <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
 
 ### 주요 기능
 - 크롤링한 데이터를 Android 의 RecyclerView 에 보여주는 기능
