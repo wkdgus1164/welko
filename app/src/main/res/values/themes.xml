@@ -13,20 +13,26 @@
         <!--<item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
 
         <!-- Customize your theme here. -->
-        <!--Status bar color-->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/main_color</item>
 
+        <!--System UI custom-->
+        <!--Status bar color-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/point_color</item>
         <!--Title bar remove-->
         <item name="windowNoTitle">true</item>
-
         <!--Navigation bar custom-->
         <item name="android:navigationBarColor">#F2F2F2</item>
 
         <!--Edit text custom-->
-        <item name="colorControlActivated">@color/main_color</item>
-        <item name="colorControlNormal">@color/unfocused_color</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlNormal">#EFEFEF</item>
 
-        <!--remove padding-->
+        <!--remove default padding-->
         <item name="android:includeFontPadding">false</item>
+
+        <!--remove btn default margin-->
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+
+        <item name="android:textAllCaps">false</item>
     </style>
 </resources>

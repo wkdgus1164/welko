@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button createAcc; // create Account (회원가입 기능 수행 -> home 화면 이동)
+    private Button createAcc; // 회원가입 기능 수행 -> home 화면 이동
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

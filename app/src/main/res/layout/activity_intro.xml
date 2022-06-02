@@ -4,51 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:background="#FFFFFF"
+    android:background="@drawable/intro_img"
     android:keyboardNavigationCluster="false"
     tools:context=".IntroActivity">
 
+    <Button
+        android:id="@+id/introSignupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp"
+        android:background="#000000"
+        android:fontFamily="@font/notosans_medium"
+        android:includeFontPadding="false"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/introLoginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/introLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/notosans_medium"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignupLaterTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/introTitleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:layout_marginTop="185dp"
-        android:autoSizeTextType="none"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
         android:fontFamily="@font/notosans_bold"
-        android:letterSpacing="0"
+        android:letterSpacing="0.3"
         android:text="WELKO"
         android:textAlignment="center"
-        android:textColor="@color/title_color"
-        android:textSize="34sp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="28dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="28dp" />
 
     <TextView
-        android:id="@+id/introSubtTitleTextView"
+        android:id="@+id/SignupLaterTextView"
         android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="35dp"
         android:fontFamily="@font/notosans_medium"
-        android:letterSpacing="0.05"
-        android:text="Welcome to Korea"
+        android:text="Sign Up Later"
         android:textAlignment="center"
-        android:textColor="@color/body_color"
-        android:textSize="16sp"
+        android:textColor="@color/point_color"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introTitleTextView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/introLogoImageView"
-        android:layout_width="220dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="21dp"
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introSubtTitleTextView"
-        app:srcCompat="@drawable/intro_logo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
