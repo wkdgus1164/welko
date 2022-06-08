@@ -13,5 +13,5 @@
     <color name="title_color">#FFFFFF</color>
     <color name="main_text_color">#000000</color>
     <color name="sub_text_color">#949494</color>
-    <color name="unfocused_color">#CCCCCC</color>
+    <color name="unfocused_color">#A5A5A5</color>
 </resources>

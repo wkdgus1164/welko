@@ -85,9 +85,9 @@
         android:layout_marginEnd="135dp"
         android:layout_marginBottom="35dp"
         android:fontFamily="@font/notosans_medium"
-        android:text="Sign Up Later"
+        android:text="Sign up later"
         android:textAlignment="center"
-        android:textColor="@color/point_color"
+        android:textColor="@color/title_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

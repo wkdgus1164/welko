@@ -13,7 +13,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Welko"
+        android:theme="@style/Theme.AppCompat"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".SignupActivity"
@@ -23,15 +24,10 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <!-- <activity -->
-        <!-- android:name=".IntroActivity" -->
-        <!-- android:exported="false" /> -->
+            android:exported="true" />
         <activity
             android:name=".IntroActivity"
             android:exported="true">
-
-            <!-- Splash screen -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,13 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

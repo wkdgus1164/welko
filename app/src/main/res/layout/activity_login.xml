@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
     tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/loginTitleTextView"
         android:layout_width="match_parent"
-        android:layout_height="26dp"
+        android:layout_height="0dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="28dp"
         android:fontFamily="@font/notosans_bold"
         android:includeFontPadding="false"
-        android:text="Log In with email"
+        android:text="Login"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/loginEmail"
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="28dp"
@@ -41,8 +42,8 @@
         app:layout_constraintTop_toBottomOf="@+id/loginTitleTextView" />
 
     <EditText
-        android:id="@+id/loginPw"
-        android:layout_width="match_parent"
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
@@ -56,16 +57,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="28dp"
-        android:background="#DDDDDD"
+        android:background="@color/point_color"
+        android:clickable="false"
         android:fontFamily="@font/notosans_bold"
         android:text="Log In"
         android:textAlignment="center"
@@ -74,23 +76,20 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPw" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <TextView
         android:id="@+id/forgotPwTextView"
-        android:layout_width="198dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="81dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/notosans_medium"
-        android:text="Forgotten Your Password?"
-        android:textAlignment="center"
-        android:textColor="@color/point_color"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+        android:text="Forgot password?"
+        android:textAlignment="viewStart"
+        android:textColor="#949494"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
@@ -105,5 +104,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="28dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPwTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
