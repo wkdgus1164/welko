@@ -13,12 +13,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+//        setContentView(R.layout.activity_intro);
 
         // App UI Test
         // setContentView(R.layout.activity_intro);
 //         setContentView(R.layout.activity_login);
 //         setContentView(R.layout.activity_signup);
         // setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_intro);
     }
 }

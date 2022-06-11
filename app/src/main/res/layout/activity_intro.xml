@@ -15,7 +15,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="15dp"
-        android:background="#000000"
+        android:background="@color/point_color"
         android:fontFamily="@font/notosans_medium"
         android:includeFontPadding="false"
         android:text="Sign Up"
@@ -41,7 +41,7 @@
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/SignupLaterTextView"
+        app:layout_constraintBottom_toTopOf="@+id/signupLaterTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -78,7 +78,7 @@
         app:layout_constraintGuide_end="28dp" />
 
     <TextView
-        android:id="@+id/SignupLaterTextView"
+        android:id="@+id/signupLaterTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="135dp"
