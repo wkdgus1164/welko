@@ -50,17 +50,20 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
         btnLogin.setBackgroundColor(Color.parseColor("#2D51C9"));
     }
 
+    // Volley: 안드로이드에서 외부 API 를 요청할 때
     private void requestMemberList() {
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
+
+        // 백엔드 서버 url (aws 도메인)
         String url = "http://welko.ap-northeast-2.elasticbeanstalk.com/member/login?email=" + email + "&password=" + password;
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,
-
+                // 성공했을 때, 응답
                 response -> new MaterialAlertDialogBuilder(LoginActivity.this)
                         .setTitle("Login succeed")
                         .setMessage(response)
@@ -68,7 +71,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
                                 new Intent(LoginActivity.this, HomeActivity.class)
                         ))
                         .show(),
-
+                // 실패 응답
                 error -> new MaterialAlertDialogBuilder(LoginActivity.this)
                         .setTitle("Login failed")
                         .setMessage("Please check your account information.")
@@ -92,6 +95,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
 
     @Override
     public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
+        // 로그인 폼 입력 조건 검사
+
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
 

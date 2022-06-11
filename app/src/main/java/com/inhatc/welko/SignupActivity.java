@@ -61,6 +61,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         btnSubmit.setBackgroundColor(Color.parseColor("#2D51C9"));
     }
 
+
     private void requestSignUp() {
         String name = etName.getText().toString();
         String email = etEmail.getText().toString();

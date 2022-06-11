@@ -23,7 +23,7 @@
         <item name="android:navigationBarColor">#F2F2F2</item>
 
         <!--Edit text custom-->
-        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlActivated">@color/point_color</item>
         <item name="colorControlNormal">#EFEFEF</item>
 
         <!--remove default padding-->

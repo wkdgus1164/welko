@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.inhatc.welko.functions.FirestoreFunction;
 
 public class IntroActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -15,6 +18,7 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
 
     private Button signup;
     private Button login;
+    private TextView signupLater;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,8 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         login = findViewById(R.id.introLoginBtn);
         login.setOnClickListener(this);
 
+        signupLater = findViewById(R.id.signupLaterTextView);
+        signupLater.setOnClickListener(this);
 //        moveMain(1);
     }
 
@@ -54,6 +60,12 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         if (v == login) {
             Intent loginIntent = new Intent(this, LoginActivity.class);
             startActivity(loginIntent);
+        }
+
+        // loginIntent: 홈 화면 이동 (로그인 없이 이용하기)
+        if (v == signupLater) {
+            Intent homeIntent = new Intent(this, HomeActivity.class);
+            startActivity(homeIntent);
         }
     }
 }
