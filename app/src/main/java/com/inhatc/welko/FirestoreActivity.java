@@ -37,7 +37,8 @@ public class FirestoreActivity extends AppCompatActivity implements View.OnClick
         FirestoreFunction firestoreFunction = new FirestoreFunction();
 
         if (view == btnGetData) {
-            firestoreFunction.getFirestoreUserData();
+//            firestoreFunction.getFirestoreUserData();
+            firestoreFunction.getFirestoreTravelList("Attractions");
             Toast.makeText(this, "데이터 가져오기", Toast.LENGTH_SHORT).show();
         } else if (view == btnSendData) {
             String first, second, third;

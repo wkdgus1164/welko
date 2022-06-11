@@ -44,7 +44,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/changdeokgung_palace"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/attrLoc1" />
 
     <ImageView
         android:id="@+id/imgView5"
@@ -54,7 +54,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/namsan_seoul_tower"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/attrLoc2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -96,19 +96,19 @@
         app:layout_constraintTop_toBottomOf="@+id/imgView1" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/attrName1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Gyeongbokgung Palace"
+        android:text="text"
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/imgView2"
         app:layout_constraintTop_toBottomOf="@+id/imgView2" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/attrName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgView3" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/attrLoc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -129,22 +129,22 @@
         android:textColor="#949494"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/imgView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/attrName2" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/attrLoc1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Jongno"
+        android:text="text"
         android:textColor="#949494"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/attrName1" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/attrName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -156,7 +156,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgView4" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/attrLoc4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -165,10 +165,10 @@
         android:textColor="#949494"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/imgView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/attrName4" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/attrName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -180,7 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgView5" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/attrLoc3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -189,7 +189,7 @@
         android:textColor="#949494"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/imgView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/attrName3" />
 
     <TextView
         android:id="@+id/textView21"
