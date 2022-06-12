@@ -63,7 +63,6 @@ public class ViewActivity extends AppCompatActivity {
 
         viewImg = findViewById(R.id.viewImg);
         viewName1 = findViewById(R.id.viewName1);
-        viewName2 = findViewById(R.id.viewName2);
         viewLoc = findViewById(R.id.viewLoc);
         viewIntro = findViewById(R.id.viewIntro);
         viewDesc = findViewById(R.id.viewDesc);

@@ -194,7 +194,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="shopping"
+        android:text="Shopping"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/shopImg0"
