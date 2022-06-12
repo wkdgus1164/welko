@@ -6,55 +6,51 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imgView1"
+        android:id="@+id/natImg0"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/yeouido_park"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgView2"
+        android:id="@+id/natImg1"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
+
         android:scaleType="centerCrop"
-        android:src="@drawable/yeouido_park"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
-        android:id="@+id/imgView3"
+        android:id="@+id/natImg2"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/cheonggyecheon_stream"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imgView4"
+        android:id="@+id/natImg3"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/namsan_park"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attrLoc1" />
+        app:layout_constraintTop_toBottomOf="@+id/natLoc1" />
 
     <ImageView
-        android:id="@+id/imgView5"
+        android:id="@+id/natImg4"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/bukhansan_national_park"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attrLoc2" />
+        app:layout_constraintTop_toBottomOf="@+id/natLoc2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -66,7 +62,7 @@
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/natImg0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -80,7 +76,7 @@
         android:textColor="#D8D5D5"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/natImg0" />
 
     <TextView
         android:id="@+id/textView5"
@@ -93,103 +89,103 @@
         android:textColor="#D8D5D5"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/natImg0" />
 
     <TextView
-        android:id="@+id/attrName1"
+        android:id="@+id/natName1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Yeouido Park"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toBottomOf="@+id/imgView2" />
+        app:layout_constraintStart_toStartOf="@+id/natImg1"
+        app:layout_constraintTop_toBottomOf="@+id/natImg1" />
 
     <TextView
-        android:id="@+id/attrName2"
+        android:id="@+id/natName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Cheonggyecheon Stream"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView3"
-        app:layout_constraintTop_toBottomOf="@+id/imgView3" />
+        app:layout_constraintStart_toStartOf="@+id/natImg2"
+        app:layout_constraintTop_toBottomOf="@+id/natImg2" />
 
     <TextView
-        android:id="@+id/attrLoc2"
+        android:id="@+id/natLoc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Jongno"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView3"
-        app:layout_constraintTop_toBottomOf="@+id/attrName2" />
+        app:layout_constraintStart_toStartOf="@+id/natImg2"
+        app:layout_constraintTop_toBottomOf="@+id/natName2" />
 
     <TextView
-        android:id="@+id/attrLoc1"
+        android:id="@+id/natLoc1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Yeouido"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toBottomOf="@+id/attrName1" />
+        app:layout_constraintStart_toStartOf="@+id/natImg1"
+        app:layout_constraintTop_toBottomOf="@+id/natName1" />
 
     <TextView
-        android:id="@+id/attrName3"
+        android:id="@+id/natName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Namsan Park"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView4"
-        app:layout_constraintTop_toBottomOf="@+id/imgView4" />
+        app:layout_constraintStart_toStartOf="@+id/natImg3"
+        app:layout_constraintTop_toBottomOf="@+id/natImg3" />
 
     <TextView
-        android:id="@+id/attrLoc4"
+        android:id="@+id/natLoc4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Jongno"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView5"
-        app:layout_constraintTop_toBottomOf="@+id/attrName4" />
+        app:layout_constraintStart_toStartOf="@+id/natImg4"
+        app:layout_constraintTop_toBottomOf="@+id/natName4" />
 
     <TextView
-        android:id="@+id/attrName4"
+        android:id="@+id/natName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Bukhansan National Park"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView5"
-        app:layout_constraintTop_toBottomOf="@+id/imgView5" />
+        app:layout_constraintStart_toStartOf="@+id/natImg4"
+        app:layout_constraintTop_toBottomOf="@+id/natImg4" />
 
     <TextView
-        android:id="@+id/attrLoc3"
+        android:id="@+id/natLoc3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Samil"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView4"
-        app:layout_constraintTop_toBottomOf="@+id/attrName3" />
+        app:layout_constraintStart_toStartOf="@+id/natImg3"
+        app:layout_constraintTop_toBottomOf="@+id/natName3" />
 
     <TextView
         android:id="@+id/textView21"
@@ -201,7 +197,7 @@
         android:text="Nature"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgView1"
-        app:layout_constraintStart_toStartOf="@+id/imgView1" />
+        app:layout_constraintBottom_toBottomOf="@+id/natImg0"
+        app:layout_constraintStart_toStartOf="@+id/natImg0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

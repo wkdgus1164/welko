@@ -6,53 +6,49 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imgView1"
+        android:id="@+id/attrImg0"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/gyeongbokgung_palace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgView2"
+        android:id="@+id/attrImg1"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
+
         android:scaleType="centerCrop"
-        android:src="@drawable/gyeongbokgung_palace"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
-        android:id="@+id/imgView3"
+        android:id="@+id/attrImg2"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/myeongdong_cathedral"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imgView4"
+        android:id="@+id/attrImg3"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/changdeokgung_palace"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attrLoc1" />
 
     <ImageView
-        android:id="@+id/imgView5"
+        android:id="@+id/attrImg4"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/namsan_seoul_tower"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attrLoc2" />
 
@@ -66,7 +62,7 @@
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/attrImg0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -80,7 +76,7 @@
         android:textColor="#D8D5D5"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/attrImg0" />
 
     <TextView
         android:id="@+id/textView5"
@@ -93,7 +89,7 @@
         android:textColor="#D8D5D5"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/attrImg0" />
 
     <TextView
         android:id="@+id/attrName1"
@@ -101,11 +97,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="text"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toBottomOf="@+id/imgView2" />
+        app:layout_constraintStart_toStartOf="@+id/attrImg1"
+        app:layout_constraintTop_toBottomOf="@+id/attrImg1" />
 
     <TextView
         android:id="@+id/attrName2"
@@ -113,11 +109,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Myeongdong Cathedral"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView3"
-        app:layout_constraintTop_toBottomOf="@+id/imgView3" />
+        app:layout_constraintStart_toStartOf="@+id/attrImg2"
+        app:layout_constraintTop_toBottomOf="@+id/attrImg2" />
 
     <TextView
         android:id="@+id/attrLoc2"
@@ -125,10 +121,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Myeongdong"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView3"
+        app:layout_constraintStart_toStartOf="@+id/attrImg2"
         app:layout_constraintTop_toBottomOf="@+id/attrName2" />
 
     <TextView
@@ -137,10 +133,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="text"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
+        app:layout_constraintStart_toStartOf="@+id/attrImg1"
         app:layout_constraintTop_toBottomOf="@+id/attrName1" />
 
     <TextView
@@ -149,11 +145,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Changdeokgung Palace"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView4"
-        app:layout_constraintTop_toBottomOf="@+id/imgView4" />
+        app:layout_constraintStart_toStartOf="@+id/attrImg3"
+        app:layout_constraintTop_toBottomOf="@+id/attrImg3" />
 
     <TextView
         android:id="@+id/attrLoc4"
@@ -161,10 +157,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Myeongdong"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView5"
+        app:layout_constraintStart_toStartOf="@+id/attrImg4"
         app:layout_constraintTop_toBottomOf="@+id/attrName4" />
 
     <TextView
@@ -173,11 +169,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Namsan Seoul Tower"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView5"
-        app:layout_constraintTop_toBottomOf="@+id/imgView5" />
+        app:layout_constraintStart_toStartOf="@+id/attrImg4"
+        app:layout_constraintTop_toBottomOf="@+id/attrImg4" />
 
     <TextView
         android:id="@+id/attrLoc3"
@@ -185,10 +181,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Jongno"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView4"
+        app:layout_constraintStart_toStartOf="@+id/attrImg3"
         app:layout_constraintTop_toBottomOf="@+id/attrName3" />
 
     <TextView
@@ -201,7 +197,7 @@
         android:text="Attractions"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgView1"
-        app:layout_constraintStart_toStartOf="@+id/imgView1" />
+        app:layout_constraintBottom_toBottomOf="@+id/attrImg0"
+        app:layout_constraintStart_toStartOf="@+id/attrImg0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

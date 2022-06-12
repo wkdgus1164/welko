@@ -9,6 +9,15 @@ public class Travel {
     private String address;
     private String transportation;
     private String thumbnail;
+    private String latlng;
+
+    public void setLatlng(String latlng) {
+        this.latlng = latlng;
+    }
+
+    public String getLatlng() {
+        return latlng;
+    }
 
     public void setType(String type) {
         this.type = type;

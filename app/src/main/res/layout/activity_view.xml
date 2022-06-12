@@ -21,6 +21,7 @@
         app:layout_constraintGuide_end="16dp" />
 
     <ScrollView
+        android:id="@+id/sv_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,41 +49,40 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/viewImg"
                     android:layout_width="match_parent"
                     android:layout_height="360dp"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/gyeongbokgung_palace" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/viewName1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/notosans_bold"
-                    android:text="Gyeongbokgung"
+                    android:text="TextView"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView20"
+                    app:layout_constraintBottom_toTopOf="@+id/viewName2"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/viewName2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
                     android:fontFamily="@font/notosans_bold"
-                    android:text="Palace"
+                    android:text="TextView"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                    app:layout_constraintStart_toStartOf="@+id/textView19" />
+                    app:layout_constraintBottom_toBottomOf="@+id/viewImg"
+                    app:layout_constraintStart_toStartOf="@+id/viewName1" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/viewLoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#333333"
@@ -91,13 +91,13 @@
                     android:paddingStart="18dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Gwanghwamun"
+                    android:text="TextView"
                     android:textColor="#FFFFFF"
                     android:textSize="16dp"
                     app:drawableLeftCompat="@drawable/ic_loc_icon"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    app:layout_constraintTop_toBottomOf="@+id/viewImg" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -113,7 +113,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
                 <TextView
-                    android:id="@+id/descTextView"
+                    android:id="@+id/viewDesc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -146,10 +146,10 @@
                     android:textColor="@color/point_color"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/descTextView" />
+                    app:layout_constraintTop_toBottomOf="@+id/viewDesc" />
 
                 <TextView
-                    android:id="@+id/introTextView"
+                    android:id="@+id/viewIntro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -170,18 +170,7 @@
                     android:text="Description"
                     android:textColor="@color/point_color"
                     android:textSize="20sp"
-                    app:layout_constraintTop_toBottomOf="@+id/introTextView" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16"
-                    app:srcCompat="@drawable/map" />
+                    app:layout_constraintTop_toBottomOf="@+id/viewIntro" />
 
                 <TextView
                     android:id="@+id/textView18"
@@ -193,13 +182,12 @@
                     android:textColor="#000000"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_map" />
 
                 <TextView
-                    android:id="@+id/addrTextView"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/viewAddr"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="302dp"
                     android:fontFamily="@font/notosans_regular"
                     android:text="TextView"
                     android:textColor="#949494"
@@ -217,11 +205,11 @@
                     android:textColor="#000000"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/addrTextView" />
+                    app:layout_constraintTop_toBottomOf="@+id/viewAddr" />
 
                 <TextView
-                    android:id="@+id/transTextView"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/viewTrans"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/notosans_regular"
                     android:text="TextView"
@@ -229,6 +217,17 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fragment_map"
+                    android:name="com.inhatc.welko.WorkaroundMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

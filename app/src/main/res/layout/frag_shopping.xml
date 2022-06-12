@@ -6,55 +6,51 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imgView1"
+        android:id="@+id/shopImg0"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/lotte_world_mall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgView2"
+        android:id="@+id/shopImg1"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
+
         android:scaleType="centerCrop"
-        android:src="@drawable/lotte_world_mall"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
-        android:id="@+id/imgView3"
+        android:id="@+id/shopImg2"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/hongdae_free_market"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imgView4"
+        android:id="@+id/shopImg3"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/seoul_yangnyeong_market"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attrLoc1" />
+        app:layout_constraintTop_toBottomOf="@+id/shopLoc1" />
 
     <ImageView
-        android:id="@+id/imgView5"
+        android:id="@+id/shopImg4"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/coex_mall"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attrLoc2" />
+        app:layout_constraintTop_toBottomOf="@+id/shopLoc2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -66,7 +62,7 @@
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/shopImg0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -80,7 +76,7 @@
         android:textColor="#D8D5D5"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/shopImg0" />
 
     <TextView
         android:id="@+id/textView5"
@@ -93,103 +89,103 @@
         android:textColor="#D8D5D5"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+        app:layout_constraintTop_toBottomOf="@+id/shopImg0" />
 
     <TextView
-        android:id="@+id/attrName1"
+        android:id="@+id/shopName1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Lotte World Mall"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toBottomOf="@+id/imgView2" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg1"
+        app:layout_constraintTop_toBottomOf="@+id/shopImg1" />
 
     <TextView
-        android:id="@+id/attrName2"
+        android:id="@+id/shopName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Hongdae Free Market"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView3"
-        app:layout_constraintTop_toBottomOf="@+id/imgView3" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg2"
+        app:layout_constraintTop_toBottomOf="@+id/shopImg2" />
 
     <TextView
-        android:id="@+id/attrLoc2"
+        android:id="@+id/shopLoc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Hongdae"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView3"
-        app:layout_constraintTop_toBottomOf="@+id/attrName2" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg2"
+        app:layout_constraintTop_toBottomOf="@+id/shopName2" />
 
     <TextView
-        android:id="@+id/attrLoc1"
+        android:id="@+id/shopLoc1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Songpa"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toBottomOf="@+id/attrName1" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg1"
+        app:layout_constraintTop_toBottomOf="@+id/shopName1" />
 
     <TextView
-        android:id="@+id/attrName3"
+        android:id="@+id/shopName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Seoul Yangnyeong Market"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView4"
-        app:layout_constraintTop_toBottomOf="@+id/imgView4" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg3"
+        app:layout_constraintTop_toBottomOf="@+id/shopImg3" />
 
     <TextView
-        android:id="@+id/attrLoc4"
+        android:id="@+id/shopLoc4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Gangnam"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView5"
-        app:layout_constraintTop_toBottomOf="@+id/attrName4" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg4"
+        app:layout_constraintTop_toBottomOf="@+id/shopName4" />
 
     <TextView
-        android:id="@+id/attrName4"
+        android:id="@+id/shopName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="COEX Mall"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView5"
-        app:layout_constraintTop_toBottomOf="@+id/imgView5" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg4"
+        app:layout_constraintTop_toBottomOf="@+id/shopImg4" />
 
     <TextView
-        android:id="@+id/attrLoc3"
+        android:id="@+id/shopLoc3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/notosans_regular"
-        android:text="Dongdaemun"
+        android:text="TextView"
         android:textColor="#949494"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imgView4"
-        app:layout_constraintTop_toBottomOf="@+id/attrName3" />
+        app:layout_constraintStart_toStartOf="@+id/shopImg3"
+        app:layout_constraintTop_toBottomOf="@+id/shopName3" />
 
     <TextView
         android:id="@+id/textView21"
@@ -198,10 +194,10 @@
         android:layout_marginStart="12dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/notosans_bold"
-        android:text="Shopping"
+        android:text="shopping"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgView1"
-        app:layout_constraintStart_toStartOf="@+id/imgView1" />
+        app:layout_constraintBottom_toBottomOf="@+id/shopImg0"
+        app:layout_constraintStart_toStartOf="@+id/shopImg0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

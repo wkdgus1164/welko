@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.inhatc.welko.functions.FirestoreFunction;
-
 public class IntroActivity extends AppCompatActivity implements View.OnClickListener {
 
     // 1초 동안 intro 화면 노출 후, login 화면으로 이동
