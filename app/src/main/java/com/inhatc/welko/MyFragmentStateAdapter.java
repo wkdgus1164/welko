@@ -10,7 +10,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-//https://velog.io/@ruinak_4127/08-05-TabLayout
+// 참고자료 : https://velog.io/@ruinak_4127/08-05-TabLayout
+// TabLayout과 각 탭의 화면인 Fragment를 연결하기 위한 클래스
 public class MyFragmentStateAdapter extends FragmentStateAdapter {
     private List<Fragment> mFragmentList = new ArrayList<>();
 

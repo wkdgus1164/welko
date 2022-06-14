@@ -28,6 +28,13 @@ public class FragNature extends Fragment implements View.OnClickListener {
     private static final String TAG = "FragNature";
     private HomeActivity mContext;
 
+    // 탭 화면에 표시되는 여행지 정보 - 이미지, 이름, 지역
+    private ImageView natImg0;
+    private ImageView natImg1;
+    private ImageView natImg2;
+    private ImageView natImg3;
+    private ImageView natImg4;
+
     private TextView natName1;
     private TextView natName2;
     private TextView natName3;
@@ -38,23 +45,13 @@ public class FragNature extends Fragment implements View.OnClickListener {
     private TextView natLoc3;
     private TextView natLoc4;
 
-    private ImageView natImg0;
-    private ImageView natImg1;
-    private ImageView natImg2;
-    private ImageView natImg3;
-    private ImageView natImg4;
+    Travel travel = new Travel(); // 여행지 객체 생성
 
+    // 여행지 정보
     private String type;
     private String name;
     private String location;
-    private String intro;
-    private String description;
-    private String address;
-    private String transportation;
     private String thumbnail;
-    private String latlng;
-
-    Travel travel = new Travel();
 
     private RequestQueue queue;
 
@@ -67,7 +64,7 @@ public class FragNature extends Fragment implements View.OnClickListener {
         super.onCreate(savedInstanceState);
     }
 
-    // https://trendy00develope.tistory.com/12
+    // 참고자료 : https://trendy00develope.tistory.com/12
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -92,38 +89,45 @@ public class FragNature extends Fragment implements View.OnClickListener {
         natLoc4 = v.findViewById(R.id.natLoc4);
         natImg4 = v.findViewById(R.id.natImg4);
 
+        // 여행지 이미지 클릭 이벤트
         natImg1.setOnClickListener(this);
         natImg2.setOnClickListener(this);
         natImg3.setOnClickListener(this);
         natImg4.setOnClickListener(this);
 
         queue = Volley.newRequestQueue(v.getContext());
-        String url = "http://welko.ap-northeast-2.elasticbeanstalk.com/travel";
+        String url = "http://welko.ap-northeast-2.elasticbeanstalk.com/travel"; // 백엔드 서버 url
 
+        // 백엔드에 GET 요청 -> ArrayList 형태로 여행지 JSON을 Parsing
         final JsonArrayRequest jsonRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
 
             @Override
             public void onResponse(JSONArray response) {
-                int j=0;
+                int j = 0; // 여행지 출력 순서
+
                 try {
+                    // JSON 배열을 반복문으로 탐색
                     for (int i = 0; i < response.length(); i++) {
-                        JSONObject jsonTravel = (JSONObject) response.get(i);
+                        JSONObject jsonTravel = (JSONObject) response.get(i); // JSON 여행지 배열을 탐색하여, 여행지 하나씩 Object 형태로 받음
 
-                        type = jsonTravel.getString("type");
+                        type = jsonTravel.getString("type"); // 받은 여행지 Object에서 "type" 값 추출
 
-                        if (type.equals("NATURE")) {
+                        if (type.equals("NATURE")) { // type = "NATURE" 일 경우, 해당 여행지를 화면에 출력
                             j++;
 
+                            // 여행지 객체에 JSON에서 Parsing 해온 정보 저장
                             travel.setType(type);
                             travel.setName(jsonTravel.getString("name"));
                             travel.setLocation(jsonTravel.getString("location"));
                             travel.setThumbnail(jsonTravel.getString("thumbnail"));
 
+                            // 여행지 정보 출력
                             if (j==1) {
                                 natName1.setText(travel.getName());
                                 natLoc1.setText(travel.getLocation());
 
-                                //https://wonpaper.tistory.com/207
+                                // 참고자료 : https://wonpaper.tistory.com/207
+                                // Glide 라이브러리로 화면에 이미지 출력
                                 Glide.with(v.getContext()).load(travel.getThumbnail()).into(natImg0);
                                 Glide.with(v.getContext()).load(travel.getThumbnail()).into(natImg1);
                             }
@@ -161,7 +165,7 @@ public class FragNature extends Fragment implements View.OnClickListener {
         jsonRequest.setTag(TAG);
         queue.add(jsonRequest);
 
-        return v;
+        return v; // fragment 화면 반환
     }
 
     @Override
@@ -172,13 +176,14 @@ public class FragNature extends Fragment implements View.OnClickListener {
         }
     }
 
-    //https://onepinetwopine.tistory.com/166
-    //https://jeong9216.tistory.com/6
+    // 참고자료: https://onepinetwopine.tistory.com/166
+    // 참고자료 : https://jeong9216.tistory.com/6
+    // 여행지 이미지 클릭 이벤트 -> 여행지 상세정보 화면(viewActivity) 이동 및 해당 여행지 이름 전달
     @Override
     public void onClick(View view) {
         if (view == natImg1) {
             Intent viewIntent = new Intent(getActivity(), ViewActivity.class);
-            viewIntent.putExtra("name",natName1.getText().toString());
+            viewIntent.putExtra("name",natName1.getText().toString()); // 여행지 이름 전달
             startActivity(viewIntent);
         }
 

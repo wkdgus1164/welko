@@ -11,14 +11,6 @@ public class Travel {
     private String thumbnail;
     private String latlng;
 
-    public void setLatlng(String latlng) {
-        this.latlng = latlng;
-    }
-
-    public String getLatlng() {
-        return latlng;
-    }
-
     public void setType(String type) {
         this.type = type;
     }
@@ -51,6 +43,10 @@ public class Travel {
         this.thumbnail = thumbnail;
     }
 
+    public void setLatlng(String latlng) {
+        this.latlng = latlng;
+    }
+
     public String getType() {
         return type;
     }
@@ -81,5 +77,9 @@ public class Travel {
 
     public String getThumbnail() {
         return thumbnail;
+    }
+
+    public String getLatlng() {
+        return latlng;
     }
 }

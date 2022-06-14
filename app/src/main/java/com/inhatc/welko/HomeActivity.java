@@ -2,7 +2,7 @@ package com.inhatc.welko;
 
 
 import android.os.Bundle;
-import android.widget.SearchView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
@@ -13,25 +13,22 @@ import com.google.android.material.tabs.TabLayoutMediator;
 public class HomeActivity extends AppCompatActivity {
 
     private HomeActivity mContext = HomeActivity.this;
-    private MyFragmentStateAdapter myFragmentStateAdapter;
-    private ViewPager2 viewPager2;
-    private TabLayout tabLayout;
 
-    private SearchView searchView;
+    private MyFragmentStateAdapter myFragmentStateAdapter; // 탭 레이아웃 - 각 탭의 화면인 fragment를 연결
+    private ViewPager2 viewPager2; // 각 탭 화면인 fragment를 출력
+    private TabLayout tabLayout; // 홈 화면의 탭 레이아웃
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        searchView = findViewById(R.id.searchView);
-        searchView.setQueryHint("Search for tourist destinations");
-
         init();
         initAdapter();
         intiTab();
     }
 
+    // 탭 레이아웃 생성 메소드
     private void intiTab() {
         new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {}).attach();
 
@@ -40,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setText("Shopping");
     }
 
+    // 탭 레이아웃 - 각 탭의 화면 fragment 연결 메소드
     private void initAdapter() {
         myFragmentStateAdapter = new MyFragmentStateAdapter(this);
         myFragmentStateAdapter.addFragment(new FragAttractions(mContext));

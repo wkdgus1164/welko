@@ -2,7 +2,6 @@ package com.inhatc.welko;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -11,6 +10,8 @@ import android.widget.FrameLayout;
 
 import com.google.android.gms.maps.SupportMapFragment;
 
+// 스크롤 뷰 안에 있는 구글 지도를 제어하기 위한 클래스
+// 스크롤 뷰의 화면 전체 상하 이동 - 구글 지도 내부 상하좌우 이동을 별도로 처리
 public class WorkaroundMapFragment extends SupportMapFragment {
     private OnTouchListener mListener;
 
